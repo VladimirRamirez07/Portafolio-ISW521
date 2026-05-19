@@ -13,7 +13,7 @@ gTLD  = uso global sin pais (.com, .io)
 pregunta 2 - Administracion de TLDs y subdominios:
 .cr - administrado por NIC Costa Rica (delegado por ICANN)
 .com - administrado por Verisign (bajo supervision ICANN)
-subdominios: NO necesitas ICANN. El dueno del dominio los crea
+subdominios: NO necesitas ICANN. el dueno del dominio los crea
 libremente en su propio servidor DNS, sin pagar ni registrar nada
 
 pregunta 3 - egresados.utn.ac.cr:

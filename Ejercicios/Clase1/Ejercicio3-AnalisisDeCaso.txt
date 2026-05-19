@@ -1,6 +1,7 @@
 Ejercicio 3 - Diseccion y Diseno de URLs
  
 PARTE A - Componentes de la URL:
+
 https://api.github.com:443/repos/bryancs/isw521/issues?state=open&labels=semana1#comentarios
  
 1. Protocolo - https
@@ -13,7 +14,7 @@ https://api.github.com:443/repos/bryancs/isw521/issues?state=open&labels=semana1
 8. Fragmento - #comentarios
  
 Total: 8 componentes
- 
+
 PARTE B - Clean URLs para sistema UTN:
  
 1. Curso ISW-521, cuatrimestre 2026-II, sede San Carlos:
