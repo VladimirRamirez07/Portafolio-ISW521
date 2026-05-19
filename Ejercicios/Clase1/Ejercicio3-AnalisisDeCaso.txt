@@ -1,0 +1,26 @@
+Ejercicio 3 - Diseccion y Diseno de URLs
+ 
+PARTE A - Componentes de la URL:
+https://api.github.com:443/repos/bryancs/isw521/issues?state=open&labels=semana1#comentarios
+ 
+1. Protocolo - https
+2. Subdominio - api
+3. Dominio - github.com
+4. Puerto - 443
+5. Ruta - /repos/bryancs/isw521/issues
+6. Parametro 1 - state=open
+7. Parametro 2 - labels=semana1
+8. Fragmento - #comentarios
+ 
+Total: 8 componentes
+ 
+PARTE B - Clean URLs para sistema UTN:
+ 
+1. Curso ISW-521, cuatrimestre 2026-II, sede San Carlos:
+   https://utn.ac.cr/san-carlos/cursos/isw-521/2026-II
+ 
+2. Perfil estudiante carne 2022-0001:
+   https://utn.ac.cr/estudiantes/2022-0001
+ 
+3. Materiales semana 3 del curso ISW-521:
+   https://utn.ac.cr/cursos/isw-521/semanas/3/materiales

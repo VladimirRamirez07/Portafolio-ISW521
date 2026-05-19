@@ -1,0 +1,26 @@
+Ejercicio 4 - Mapeando el arbol DNS
+
+pregunta 1 - TLD, SLD y Subdominio:
+
+campus.utn.ac.cr - TLD: .cr (ccTLD) | SLD: utn.ac.cr | Subdominio: campus
+www.netflix.com - TLD: .com (gTLD) | SLD: netflix   | Subdominio: www
+api.github.io - TLD: .io (gTLD)  | SLD: github    | Subdominio: api
+app.maravilla.co.cr - TLD: .cr (ccTLD) | SLD: maravilla.co.cr | Subdominio: app
+
+ccTLD = asignado a un pais (.cr = Costa Rica)
+gTLD  = uso global sin pais (.com, .io)
+
+pregunta 2 - Administracion de TLDs y subdominios:
+.cr - administrado por NIC Costa Rica (delegado por ICANN)
+.com - administrado por Verisign (bajo supervision ICANN)
+subdominios: NO necesitas ICANN. El dueno del dominio los crea
+libremente en su propio servidor DNS, sin pagar ni registrar nada
+
+pregunta 3 - egresados.utn.ac.cr:
+no necesita pagar, la UTN ya posee utn.ac.cr
+solo agrega un registro DNS en su servidor. Sin costo adicional
+
+pregunta 4 - Registro A vs CNAME:
+registro A - apunta a una IP directa. Ej: utn.ac.cr → 190.10.20.5
+registro CNAME - apunta a otro dominio (alias). Ej: campus.utn.ac.cr - servidor.utn.ac.cr
+ventaja CNAME: si cambia la IP, solo se actualiza en el registro A

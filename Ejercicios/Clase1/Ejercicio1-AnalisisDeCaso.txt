@@ -1,0 +1,19 @@
+Ejercicio 1 - análisis de caso
+ 
+pregunta 1:
+El Rector está incorrecto. "Internet" es la red física/infraestructura global (TCP/IP)
+La "Web (WWW)" es un servicio que corre SOBRE Internet (HTTP, HTML, URLs)
+La distinción importa porque define si el sistema es público o restringido (intranet vs web pública)
+ 
+pregunta 2:
+Usan AMBOS, pero de forma restringida.
+Internet: sí, porque usan la infraestructura de red
+WWW: parcialmente, usan HTTP pero no es pública
+Esto se llama INTRANET: protocolos web, pero acceso solo interno
+ 
+pregunta 3:
+Ambos organismos aplican, pero con roles distintos:
+IETF: define HTTP, HTTPS, TLS, TCP/IP son protocolos de comunicación y seguridad
+W3C: define HTML, CSS, WCAG son presentación e interfaz
+El MÁS relevante es el IETF, porque la seguridad del transporte (HTTPS/TLS)
+es lo más crítico para un sistema que maneja datos académicos sensibles

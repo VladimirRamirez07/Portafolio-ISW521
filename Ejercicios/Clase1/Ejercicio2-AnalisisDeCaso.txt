@@ -1,0 +1,17 @@
+Ejercicio 2 - Toma de Decision Tecnica
+ 
+pregunta 1:
+a - Internet: informacion publica, cualquier vecino accede sin restricciones
+b - Intranet: solo personal interno de RRHH, datos sensibles de planillas
+c - Extranet: acceso restringido a empresas constructoras del canton (externo pero controlado)
+ 
+pregunta 2:
+El sistema B (Intranet - Planillas RRHH) requiere mas inversion en seguridad.
+Maneja datos sensibles (salarios, identidades), una brecha implica responsabilidad legal grave
+ 
+pregunta 3:
+Si es posible usando virtualizacion y segmentacion de red:
+VMs o contenedores separados para cada sistema (A, B, C)
+VLANs para aislar el trafico de red
+Firewall con reglas distintas por segmento
+Esto se llama separacion logica sobre infraestructura compartido
