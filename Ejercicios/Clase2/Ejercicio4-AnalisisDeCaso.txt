@@ -1,0 +1,34 @@
+Ejercicio 4:
+
+1. ¿Cuánto tiempo tardó la resolución DNS?
+   13 µs
+
+2. ¿Cuánto tardó el TCP Handshake? (Initial connection)
+   164.38 ms
+
+3. ¿Cuánto tardó el TLS Handshake? (SSL)
+   83.59 ms
+
+4. ¿Cuántos recursos cargó la página? ¿Cuántos usaron HTTP/2?
+el total de recursos: 200 requests - 16.6 MB transferidos 19.2 MB sin comprimir
+http/2: 20 recursos usaron h2
+la mayoria de recursos cpmp css o imagenes se sirvieron por http/1.1,
+lo cual explica el tiempo de carga elevado 6.40 s
+
+5. Recurso más pesado. ¿Qué tipo es? ¿Podría optimizarse?
+
+recurso: actividades-bg.png - 1,572 kB lo cual serian 1.5 MB
+tipo: imagen PNG
+¿Se puede optimizar? Sí, varias opciones:
+redimensionar al tamaño real que ocupa en pantalla
+comprimir con herramientas como Squoosh o TinyPNG
+
+6. Resumen general:
+
+la pagina cargo 200 recursos en 6.4 segundos con 16.6 MB
+transferidos, el DNS tardo 13 µs, el tcp 164.38 ms y
+el TLS 83.59 ms, la mayoria de recursos usan http/1.1 en lugar de
+http/2, lo que genera multiples conexiones paralelas y aumenta el
+tiempo de carga, el recurso más pesado es una imagen PNG de fondo
+de 1.5 MB que podría reducirse fácilmente con Squoosh o TinyPNG, migrar a http/2
+completo y optimizar imagenes serian las mejoras mas impactantes

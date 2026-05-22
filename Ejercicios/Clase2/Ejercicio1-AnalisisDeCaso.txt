@@ -1,0 +1,19 @@
+Ejercicio 1:
+
+1. ¿Es correcto el argumento de velocidad?
+UDP es más rápido, pero para archivos críticos la confiabilidad importa más que la velocidad
+
+2. ¿Qué mecanismos de TCP perderías?
+la entrega garantizada, el orden de llegada, el control de flujo y comprencion, 
+la verificacion de la integridad compleja y el estado de conexion
+
+3. ¿Cuándo SÍ usar UDP?
+cuando la velocidad > integridad, por ejemplo: 
+-videollamadas o streaming (WebRTC): perder un frame es tolerable
+-juegos en línea: posiciones en tiempo real, un paquete perdido no importa
+-telemetría IoT de alta frecuencia: una lectura perdida no afecta el análisis
+
+4. ¿Cómo afecta el 3-Way Handshake con muchas conexiones cortas?
+agrega 1 RTT por conexión, con miles de conexiones o segundo el overhead
+se acumula y consume recursos (TIME_WAIT)
+soluciones: Keep-Alive, HTTP/2, gRPC, o QUIC
