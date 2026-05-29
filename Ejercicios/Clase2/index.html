@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axel Vladimir Ramírez — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:    #1B2A4A;
+      --mid:     #2E5090;
+      --accent:  #4A7ED4;
+      --light:   #EEF3FB;
+      --gold:    #C89A3A;
+      --white:   #FAFBFD;
+      --gray:    #6B7A99;
+      --border:  #D4DCF0;
+      --text:    #1A1F2E;
+      --bg:      #F4F6FC;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    /* ── PAGE WRAPPER ─────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--white);
+      box-shadow: 0 8px 48px rgba(27,42,74,.13), 0 2px 8px rgba(27,42,74,.07);
+      border-radius: 4px;
+      overflow: hidden;
+      animation: fadeUp .6s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── HEADER ───────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, var(--navy) 0%, #243b6e 60%, #1e3560 100%);
+      padding: 3rem 3rem 2.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: rgba(74,126,212,.13);
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: 40%;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(200,154,58,.08);
+    }
+    .header-inner { position: relative; z-index: 1; }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.6rem;
+      color: #fff;
+      letter-spacing: .02em;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-size: .9rem;
+      color: rgba(255,255,255,.7);
+      font-weight: 300;
+      margin-top: .45rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .subtitle span {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* contact bar */
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem 1.4rem;
+      margin-top: 1.6rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .82rem;
+      color: rgba(255,255,255,.82);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .contact-item:hover { color: var(--gold); }
+    .contact-item .icon {
+      width: 16px; height: 16px;
+      opacity: .7;
+      flex-shrink: 0;
+    }
+
+    /* ── MAIN BODY ────────────────────────────────────── */
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 2.2fr;
+      gap: 0;
+    }
+
+    /* ── SIDEBAR ──────────────────────────────────────── */
+    .sidebar {
+      background: var(--light);
+      padding: 2rem 1.6rem;
+      border-right: 1px solid var(--border);
+    }
+
+    /* ── MAIN CONTENT ─────────────────────────────────── */
+    .main {
+      padding: 2rem 2.2rem;
+    }
+
+    /* ── SECTION ──────────────────────────────────────── */
+    .section { margin-bottom: 1.7rem; }
+    .section:last-child { margin-bottom: 0; }
+
+    .sec-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: .72rem;
+      color: var(--mid);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-style: italic;
+      padding-bottom: .45rem;
+      border-bottom: 1.5px solid var(--border);
+      margin-bottom: 1rem;
+    }
+    .sec-title.gold { color: var(--gold); border-bottom-color: rgba(200,154,58,.3); }
+
+    /* ── SKILLS SIDEBAR ───────────────────────────────── */
+    .skill-group { margin-bottom: 1.2rem; }
+    .skill-group-label {
+      font-size: .7rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: .5rem;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .67rem;
+      padding: .22rem .55rem;
+      border-radius: 3px;
+      background: var(--white);
+      color: var(--mid);
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .tag.accent { background: var(--mid); color: #fff; border-color: var(--mid); }
+    .tag.gold   { background: var(--gold); color: #fff; border-color: var(--gold); }
+
+    /* competencies */
+    .comp-list { list-style: none; }
+    .comp-list li {
+      font-size: .8rem;
+      color: var(--text);
+      padding: .3rem 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .comp-list li:last-child { border-bottom: none; }
+    .comp-list li::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* languages */
+    .lang-item { margin-bottom: .6rem; }
+    .lang-name { font-size: .8rem; font-weight: 600; color: var(--navy); }
+    .lang-level { font-size: .72rem; color: var(--gray); margin-bottom: .25rem; }
+    .lang-bar { height: 4px; background: var(--border); border-radius: 4px; }
+    .lang-bar-fill { height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--mid), var(--accent)); }
+
+    /* ── EXPERIENCE ───────────────────────────────────── */
+    .exp-item { margin-bottom: 1.3rem; }
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: .3rem; }
+    .exp-title { font-size: .92rem; font-weight: 600; color: var(--navy); line-height: 1.3; }
+    .exp-company { font-size: .8rem; font-weight: 500; color: var(--accent); margin-bottom: .15rem; }
+    .exp-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .68rem;
+      color: var(--gray);
+      white-space: nowrap;
+      background: var(--light);
+      padding: .2rem .55rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+    .exp-bullets { list-style: none; margin-top: .5rem; }
+    .exp-bullets li {
+      font-size: .8rem;
+      color: #3a4060;
+      padding: .22rem 0 .22rem 1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .exp-bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: .7rem;
+    }
+    strong.kw { color: var(--navy); font-weight: 600; }
+
+    /* ── PROJECTS ─────────────────────────────────────── */
+    .proj-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--border); }
+    .proj-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .proj-name { font-size: .86rem; font-weight: 600; color: var(--navy); margin-bottom: .15rem; display: flex; align-items: center; gap: .5rem; }
+    .proj-name::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .proj-stack { font-family: 'JetBrains Mono', monospace; font-size: .66rem; color: var(--accent); margin-bottom: .3rem; }
+    .proj-desc { font-size: .77rem; color: var(--gray); line-height: 1.55; }
+    .impact-badge {
+      display: inline-block;
+      font-size: .62rem;
+      font-weight: 600;
+      padding: .15rem .5rem;
+      border-radius: 20px;
+      background: #FCEBEB;
+      color: #A32D2D;
+      letter-spacing: .04em;
+      margin-top: .3rem;
+    }
+
+    /* ── EDUCATION ────────────────────────────────────── */
+    .edu-title { font-size: .88rem; font-weight: 600; color: var(--navy); }
+    .edu-school { font-size: .8rem; color: var(--accent); font-weight: 500; margin: .15rem 0; }
+    .edu-date { font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--gray); }
+    .edu-notes { font-size: .77rem; color: #3a4060; margin-top: .4rem; line-height: 1.55; }
+
+    /* ── SUMMARY ──────────────────────────────────────── */
+    .summary-text { font-size: .82rem; color: #3a4060; line-height: 1.7; }
+
+    /* ── FOOTER ───────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: .9rem;
+      font-size: .7rem;
+      color: var(--gray);
+      border-top: 1px solid var(--border);
+      background: var(--light);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 640px) {
+      .body { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+      header { padding: 2rem 1.5rem 1.6rem; }
+      h1 { font-size: 2rem; }
+      .main { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <h1>Axel Vladimir Ramírez</h1>
+      <p class="subtitle">
+        <span>QA Engineer</span> &nbsp;·&nbsp;
+        Full Stack Developer &nbsp;·&nbsp;
+        <span>Cybersecurity</span>
+      </p>
+      <div class="contact-bar">
+        <a href="mailto:axelramirezv189@gmail.com" class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          axelramirezv189@gmail.com
+        </a>
+        <a href="tel:+50685871316" class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 5.95 5.95l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          8587-1316
+        </a>
+        <a href="https://github.com/VladimirRamirez07" target="_blank" class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github.com/VladimirRamirez07
+        </a>
+        <span class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Costa Rica
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── BODY GRID ───────────────────────────────────────────── -->
+  <div class="body">
+
+    <!-- ── SIDEBAR ─────────────────────────────────────────── -->
+    <aside class="sidebar">
+
+      <!-- Core Competencies -->
+      <div class="section">
+        <div class="sec-title">Competencias</div>
+        <ul class="comp-list">
+          <li>Test Automation</li>
+          <li>OWASP Top 10</li>
+          <li>DevSecOps</li>
+          <li>API Security Testing</li>
+          <li>CI/CD Security Gates</li>
+          <li>Cloud Security (AWS)</li>
+          <li>Performance Testing</li>
+          <li>Full Stack Development</li>
+          <li>SOLID Principles</li>
+          <li>Agile / Scrum</li>
+          <li>OSINT</li>
+          <li>Penetration Testing</li>
+        </ul>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="section">
+        <div class="sec-title">Habilidades Técnicas</div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Lenguajes</div>
+          <div class="tags">
+            <span class="tag accent">Python</span>
+            <span class="tag accent">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bash</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">QA & Testing</div>
+          <div class="tags">
+            <span class="tag accent">Playwright</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">Appium</span>
+            <span class="tag">pytest</span>
+            <span class="tag">Postman</span>
+            <span class="tag">K6</span>
+            <span class="tag">Allure</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Seguridad</div>
+          <div class="tags">
+            <span class="tag accent">Burp Suite</span>
+            <span class="tag">OWASP ZAP</span>
+            <span class="tag">Nmap</span>
+            <span class="tag">Scapy</span>
+            <span class="tag">Trivy</span>
+            <span class="tag">Semgrep</span>
+            <span class="tag">YARA</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Full Stack</div>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">DevSecOps & Cloud</div>
+          <div class="tags">
+            <span class="tag gold">GitHub Actions</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">SonarQube</span>
+            <span class="tag">Snyk</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Grafana</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="section">
+        <div class="sec-title">Idiomas</div>
+        <div class="lang-item">
+          <div class="lang-name">Español</div>
+          <div class="lang-level">Nativo</div>
+          <div class="lang-bar"><div class="lang-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Inglés</div>
+          <div class="lang-level">Profesional</div>
+          <div class="lang-bar"><div class="lang-bar-fill" style="width:78%"></div></div>
+        </div>
+      </div>
+
+      <!-- GitHub Stats -->
+      <div class="section">
+        <div class="sec-title gold">GitHub Portfolio</div>
+        <div style="font-size:.78rem;color:var(--gray);line-height:1.6;">
+          <strong style="color:var(--navy);font-size:1.3rem;">30</strong> proyectos públicos<br>
+          QA · Security · DevSecOps<br>
+          Cloud · Performance · OSINT
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+    <main class="main">
+
+      <!-- Summary -->
+      <div class="section">
+        <div class="sec-title">Perfil Profesional</div>
+        <p class="summary-text">
+          Estudiante de <strong class="kw">Ingeniería en Software</strong> con perfil híbrido en <strong class="kw">QA Automation</strong>, <strong class="kw">Desarrollo Full Stack</strong> y <strong class="kw">Ciberseguridad</strong>. Experiencia práctica diseñando frameworks de automatización, implementando pipelines DevSecOps y aplicando buenas prácticas OWASP. Capaz de contribuir en todo el ciclo de vida del software — desde la arquitectura hasta el aseguramiento de calidad y seguridad. Portafolio activo de 30 proyectos en GitHub.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="sec-title">Educación</div>
+        <div class="edu-title">Ingeniería en Software</div>
+        <div class="edu-school">Universidad Técnica Nacional de Costa Rica</div>
+        <div class="edu-date">2025 – Presente</div>
+        <div class="edu-notes">
+          Formación en desarrollo de software, redes, seguridad informática y bases de datos. Proyectos académicos en automatización, ciberseguridad aplicada y arquitectura de sistemas.
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="sec-title">Proyectos Destacados</div>
+
+        <div class="proj-item">
+          <div class="proj-name">CI/CD Security Pipeline + Security Gates</div>
+          <div class="proj-stack">GitHub Actions · Semgrep · Trivy · TruffleHog · Snyk</div>
+          <div class="proj-desc">Pipeline DevSecOps que escanea cada commit buscando secretos, CVEs en dependencias e imágenes Docker. Bloquea merges automáticamente ante hallazgos críticos.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">OSINT Security Compliance Scanner</div>
+          <div class="proj-stack">Python · DNS APIs · SPF/DKIM/DMARC · ReportLab PDF</div>
+          <div class="proj-desc">Analiza infraestructura pública de dominios reales (apple.com, netflix.com) revisando políticas anti-phishing, cabeceras HTTP y riesgo de subdomain takeover. 100% pasivo y legal.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Framework Multipropósito Web, API &amp; Mobile</div>
+          <div class="proj-stack">TypeScript · Playwright · Appium · Allure · BrowserStack</div>
+          <div class="proj-desc">Ecosistema de pruebas escalable con principios SOLID, ejecución paralela y configuraciones dinámicas por entorno (Dev/QA/Staging).</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Cloud Misconfiguration Scanner (AWS)</div>
+          <div class="proj-stack">Python · Boto3 · FastAPI · Docker</div>
+          <div class="proj-desc">Detecta buckets S3 públicos, security groups abiertos y claves IAM sin rotación. Genera reportes de riesgo con severidad basada en benchmarks CIS.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Secure Auth API + Vulnerable Web App</div>
+          <div class="proj-stack">Node.js · JWT · bcrypt · React · SQLite · OWASP Top 10</div>
+          <div class="proj-desc">API de autenticación profesional con 2FA y detección de brute force. App vulnerable intencionalmente con writeups completos de explotación y remediación.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Performance Pipeline — Spike &amp; Stress Testing</div>
+          <div class="proj-stack">K6 · Terraform · Grafana · InfluxDB</div>
+          <div class="proj-desc">Suite de pruebas de carga con infraestructura como código y dashboards en tiempo real para análisis de cuellos de botella bajo escenarios de estrés.</div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────── -->
+  <footer>
+    axelramirezv189@gmail.com &nbsp;·&nbsp; github.com/VladimirRamirez07 &nbsp;·&nbsp; Costa Rica &nbsp;·&nbsp; 2026
+  </footer>
+
+</div>
+</body>
+</html>
