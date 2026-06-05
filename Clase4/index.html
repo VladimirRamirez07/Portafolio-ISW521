@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISW-521 · Programación en Ambiente Web I</title>
+  <style>
+    body {
+      font-family: Tahoma, Verdana, Geneva, Arial, sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 24px;
+    }
+
+    /* ===== Modelo de caja EXACTO segun las indicaciones ===== */
+    .card {
+      width: 500px;          /* width: 500px exactos */
+      margin: 16px;          /* margin: 16px */
+      border: 2px solid #d4d8de;  /* border: 2px */
+      padding: 20px;         /* padding: 20px */
+      box-sizing: border-box;
+      background: #eef0f3;
+      overflow: hidden;      /* recorta el header a sangre dentro del borde */
+    }
+
+    /* Encabezado azul (a sangre: sale del padding del .card) */
+    .card .header {
+      margin: -20px -20px 0 -20px;
+      background: #243f73;
+      padding: 22px 22px;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    /* Barra amarilla */
+    .card .accent {
+      height: 6px;
+      background: #f5b400;
+      border-radius: 3px;
+      margin: 18px 0 4px 0;
+    }
+
+    /* Titulo del curso */
+    .card h2 {
+      color: #2b3a52;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 16px 0 14px 0;
+    }
+
+    /* Descripcion */
+    .card p {
+      color: #5a6473;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 22px 0;
+    }
+
+    /* Boton "Ver curso" */
+    .card .btn {
+      display: block;
+      background: #243f73;
+      color: #f5b400;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 16px;
+      border-radius: 2px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">ISW-521</div>
+    <div class="accent"></div>
+    <h2>Programación en Ambiente Web I</h2>
+    <p>Aprende a construir aplicaciones web modernas con HTML, CSS y JavaScript.</p>
+    <a href="#" class="btn">Ver curso &rarr;</a>
+  </div>
+
+</body>
+</html>
