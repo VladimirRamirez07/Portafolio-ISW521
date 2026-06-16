@@ -4,10 +4,10 @@
 ![Cuatrimestre](https://img.shields.io/badge/Cuatrimestre-2026--II-blue)
 ![Sede](https://img.shields.io/badge/Sede-UTN%20San%20Carlos-green)
 
-**Estudiante:** Vladimir Ramirez
-**Curso:** ISW-521 — Ingeniería de Software Web
-**Profesor:** Bladimir Arroyo Blanco
-**Sede:** UTN San Carlos · Cuatrimestre 2026-II
+**Estudiante:** Vladimir Ramirez.
+**Curso:** ISW-521 — Ingeniería de Software Web.
+**Profesor:** Bladimir Arroyo Blanco.
+**Sede:** UTN San Carlos · Cuatrimestre 2026-II.
 
 ---
 
