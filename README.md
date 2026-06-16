@@ -6,7 +6,7 @@
 
 **Estudiante:** Vladimir Ramirez
 **Curso:** ISW-521 — Ingeniería de Software Web
-**Profesor:** Bladimir Arroyo Blanco.
+**Profesor:** Bladimir Arroyo Blanco
 **Sede:** UTN San Carlos · Cuatrimestre 2026-II
 
 ---
