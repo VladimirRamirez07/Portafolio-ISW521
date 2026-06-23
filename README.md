@@ -49,6 +49,15 @@ Portafolio-ISW521/
 | 3 | Análisis de certificado real | TLS · Certificados · CA · Cipher Suite | ✅ Completo |
 | 4 | Mapeá el ciclo completo | DevTools · DNS · TCP · TLS · HTTP/2 | ✅ Completo |
 
+### Semana 6 — Unidad 3: Introducción a JavaScript
+
+| # | Archivo | Tema | Estado |
+|---|---------|------|--------|
+| 1 | `FizzBuzzClasico.js` | FizzBuzz del 1 al 30 · `for` · `if/else` · operador `%` | ✅ Completo |
+| 2 | `TablaMultiplicar.js` | Tabla del 1 al 10 · `prompt()` · template literals | ⏳ Pendiente |
+| 3 | `SumaArreglo.js` | Suma de arreglo · `for...of` · acumulador | ✅ Completo |
+| 4 | `ClasificadorNotas.js` | Clasificador A-F · `switch` · `typeof` · promedio | ⏳ Pendiente |
+
 ---
 
 ## 🧠 Conceptos cubiertos
@@ -57,6 +66,7 @@ Portafolio-ISW521/
 `Registros A y CNAME` `HTTPS / TLS` `HTTP` `W3C` `IETF` `ICANN`
 `TCP` `UDP` `3-Way Handshake` `HTTP/1.1` `HTTP/2` `HTTP/3` `QUIC` `HOL Blocking`
 `Certificados digitales` `Let's Encrypt` `Cipher Suite` `DevTools` `Waterfall`
+`JavaScript` `for` `for...of` `if/else` `switch` `prompt()` `template literals` `operador %`
 
 ---
 
@@ -65,6 +75,7 @@ Portafolio-ISW521/
 - **Editor:** Visual Studio Code
 - **Control de versiones:** Git / GitHub
 - **Lenguaje de documentación:** Markdown
+- **Runtime:** Node.js v24
 
 ---
 
