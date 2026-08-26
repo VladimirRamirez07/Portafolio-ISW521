@@ -43,13 +43,18 @@
 │       ├── State-Management.pdf
 │       ├── State-Management.pptx
 │       └── StateManagement.js      # Patrón Redux/Store en JS puro (Inmutabilidad y Suscripciones)
+├── Investigacion/                  # Investigación técnica y comparativa
+│   └── Vite-vs-Webpack             # Submódulo: Análisis técnico y demo en vivo
+├── Laboratorios/                   # Proyectos de laboratorio prácticos
+│   ├── Laboratorio01               # Submódulo: Landing Page (lab1-web-landing-page-ISW521)
+│   └── Laboratorio02               # Submódulo: Rastreador de Goleadas (Laboratorio2-ISW521-RastreadorGoleadas)
 └── README.md
 ```
 ---
 
 ## Contenido de Módulos y Semanas
 
-### 🔹 Semana 01, 02 y 03 — Fundamentos Web y Conceptos Teórico-Prácticos
+### 🔹 Semanas 01, 02 y 03 — Fundamentos Web y Conceptos Teórico-Prácticos
 - **Semana 01:** Conceptos de Internet vs WWW, Intranet/Extranet, estructura de URLs, Clean URLs y mapeo DNS (TLDs, SLD, Registros A y CNAME).
 - **Semana 02:** Análisis de arquitectura TCP/IP, protocolos HTTP, certificados TLS/HTTPS, hoja de vida interactiva y práctica sobre **selectores CSS**.
 - **Semana 03:** Guías de trabajo y análisis de casos prácticos (Ejercicios 1 al 10).
@@ -72,18 +77,29 @@
 
 ---
 
+## Proyectos Vinculados (Submódulos)
+
+### 🔬 Investigación
+- **`Vite-vs-Webpack`**: Investigación técnica comparativa y demo interactiva para analizar tiempos de construcción, empaquetado y rendimiento entre herramientas de bundling modernas.
+
+### 🧪 Laboratorios
+- **`Laboratorio01`**: Desarrollo de Landing Page adaptable aplicando maquetación HTML5 semántica y estilos CSS avanzadas.
+- **`Laboratorio02`**: Aplicación web *Rastreador de Goleadas* estructurada para el control y gestión de estadísticas deportivas mediante JavaScript.
+
+---
+
 ## Conceptos y Tecnologías Cubiertas
 
 `HTML5 Semántico` `CSS3 Grid & Flexbox` `Selectores CSS` `Responsive Design` `Box Model`  
 `JavaScript (ES6+)` `State Management` `Redux Pattern` `Inmutabilidad` `Pub-Sub Pattern`  
-`DNS / TLDs` `HTTP / HTTPS / TLS` `Clean URLs` `TCP/IP`  
+`Bundlers (Vite / Webpack)` `DNS / TLDs` `HTTP / HTTPS / TLS` `TCP/IP`  
 
 ---
 
 ## Herramientas Utilizadas
 
 - **Editor de Código:** Visual Studio Code  
-- **Control de Versiones:** Git / GitHub  
+- **Control de Versiones:** Git / GitHub Submodules  
 - **Motor de Ejecución:** Node.js  
 
 ---

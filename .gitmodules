@@ -1,0 +1,9 @@
+[submodule "Laboratorios/Laboratorio01"]
+	path = Laboratorios/Laboratorio01
+	url = https://github.com/VladimirRamirez07/lab1-web-landing-page-ISW521.git
+[submodule "Laboratorios/Laboratorio02"]
+	path = Laboratorios/Laboratorio02
+	url = https://github.com/VladimirRamirez07/Laboratorio2-ISW521-RastreadorGoleadas.git
+[submodule "Investigaciones/Vite-vs-Webpack"]
+	path = Investigacion/Vite-vs-Webpack
+	url = https://github.com/VladimirRamirez07/investigacion-vite-vs-webpack-isw521.git
