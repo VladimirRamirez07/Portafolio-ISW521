@@ -1,0 +1,46 @@
+<ul>
+  <li class="vegetal">Zanahoria</li>
+  <li>Papa</li>
+  <li class="vegetal">Brócoli</li>
+  <li>Arroz</li>
+</ul>
+
+//Solución:
+
+li.vegetal {
+  color: green;
+}
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Blog</a>
+  <a href="#">About</a>
+</nav>
+
+//Solución:
+
+nav > a:first-child { }
+/* o también */
+nav a:first-of-type { }
+
+<form>
+  <input type="text">
+  <input type="email">
+  <input type="submit">
+</form>
+
+//Solución:
+
+input:not([type="submit"]) { }
+
+<section>
+  <p>Primero</p>
+  <p>Segundo</p>
+  <p>Tercero</p>
+</section>
+
+//Solución:
+
+p:nth-child(odd) { }
+/* o equivalente */
+p:nth-child(2n+1) { }
