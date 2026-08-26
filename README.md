@@ -5,7 +5,7 @@
 ![Sede](https://img.shields.io/badge/Sede-UTN%20San%20Carlos-green)
 
 **Estudiante:** Axel Vladimir Ramírez  
-**Curso:** ISW-521 — Programación en Ambiente Web I  
+**Curso:** ISW-521 - Programación en Ambiente Web I  
 **Profesor:** Bladimir Arroyo Blanco  
 **Sede:** UTN San Carlos · Cuatrimestre 2026-II  
 
@@ -79,10 +79,10 @@
 
 ## Proyectos Vinculados (Submódulos)
 
-### 🔬 Investigación
+### Investigación
 - **`Vite-vs-Webpack`**: Investigación técnica comparativa y demo interactiva para analizar tiempos de construcción, empaquetado y rendimiento entre herramientas de bundling modernas.
 
-### 🧪 Laboratorios
+### Laboratorios
 - **`Laboratorio01`**: Desarrollo de Landing Page adaptable aplicando maquetación HTML5 semántica y estilos CSS avanzadas.
 - **`Laboratorio02`**: Aplicación web *Rastreador de Goleadas* estructurada para el control y gestión de estadísticas deportivas mediante JavaScript.
 
