@@ -14,66 +14,67 @@
 ## Estructura del Repositorio
 
 ```
-├── Clase4/
-│   └── index.html                  # Tarjeta de presentación de curso (Modelo de caja CSS)
 ├── Ejercicios/
-│   ├── Clase1/                     # Redes, arquitectura web, URLs y DNS
+│   ├── Semana01/                   # Redes, arquitectura web, URLs y DNS
 │   │   ├── Ejercicio1-AnalisisDeCaso.txt
 │   │   ├── Ejercicio2-AnalisisDeCaso.txt
 │   │   ├── Ejercicio3-AnalisisDeCaso.txt
 │   │   └── Ejercicio4-AnalistaDeCaso.txt
-│   ├── Clase2/                     # TCP/IP, HTTP/TLS, CV e interfaz Web
+│   ├── Semana02/                   # TCP/IP, HTTP/TLS, CV e interfaz Web
 │   │   ├── Ejercicio1-AnalisisDeCaso.pdf
 │   │   ├── Ejercicio2-AnalisisDeCaso.pdf
 │   │   ├── Ejercicio3-AnalisisDeCaso.pdf
 │   │   ├── Ejercicio4-AnalisisDeCaso.pdf
+│   │   ├── PracticaSlectores.html  # Práctica de selectores CSS
 │   │   └── index.html              # CV / Portafolio Responsive
-│   └── Clase3/                     # Casos prácticos y actividades
-│       ├── Actividad Rapida.pdf
-│       └── Ejercicio1-10-AnalisisDeCaso.pdf
-├── Semana6/                        # JavaScript Básico & Portafolio Responsive
-│   ├── FizzBuzzClasico.js          # Control de flujo e iteraciones
-│   ├── SumaArreglo.js              # Manejo de arreglos y acumuladores
-│   ├── index.html                  # Portafolio interactivo adaptable
-│   └── perfil.jpeg                 # Fotografía de perfil profesional
-├── Semana11/                       # Manejo de Estado (State Management)
-│   ├── State-Management.pdf
-│   ├── State-Management.pptx
-│   └── StateManagement.js          # Patrón Redux/Store en JS puro (Immutabilidad y Subscripciones)
+│   ├── Semana03/                   # Casos prácticos y actividades
+│   │   ├── Actividad Rapida.pdf
+│   │   └── Ejercicio1-10-AnalisisDeCaso.pdf
+│   ├── Semana04/                   # Maquetación CSS Avanzada (Box Model)
+│   │   └── index.html              # Tarjeta de presentación de curso
+│   ├── Semana06/                   # JavaScript Básico & Portafolio Responsive
+│   │   ├── ClasificadorNotas.js    # Clasificación de notas y promedio
+│   │   ├── FizzBuzzClasico.js      # Control de flujo e iteraciones
+│   │   ├── SumaArreglo.js          # Manejo de arreglos y acumuladores
+│   │   ├── TablaMultiplicar.js     # Ciclos e interpolación con template literals
+│   │   ├── index.html              # Portafolio interactivo adaptable
+│   │   └── perfil.jpeg             # Fotografía de perfil profesional
+│   └── Semana11/                   # Manejo de Estado (State Management)
+│       ├── State-Management.pdf
+│       ├── State-Management.pptx
+│       └── StateManagement.js      # Patrón Redux/Store en JS puro (Inmutabilidad y Suscripciones)
 └── README.md
 ```
 ---
 
-## Ejercicios
+## Contenido de Módulos y Semanas
 
----
+### 🔹 Semana 01, 02 y 03 — Fundamentos Web y Conceptos Teórico-Prácticos
+- **Semana 01:** Conceptos de Internet vs WWW, Intranet/Extranet, estructura de URLs, Clean URLs y mapeo DNS (TLDs, SLD, Registros A y CNAME).
+- **Semana 02:** Análisis de arquitectura TCP/IP, protocolos HTTP, certificados TLS/HTTPS, hoja de vida interactiva y práctica sobre **selectores CSS**.
+- **Semana 03:** Guías de trabajo y análisis de casos prácticos (Ejercicios 1 al 10).
 
-## Contenido de las Clases y Módulos
+### 🔹 Semana 04 — Maquetación CSS Avanzada
+- **`index.html`**: Maquetación exacta basada en el modelo de caja CSS (Box Model, encabezado a sangre, paleta institucional y pseudo-elementos).
 
-### 🔹 Ejercicios Teórico-Prácticos (Clases 1, 2 y 3)
-- **Clase 1:** Conceptos fundamentales de Internet vs WWW, Intranet/Extranet, disección de componentes de URLs, Clean URLs para la UTN y mapeo del árbol DNS (TLDs, SLD, Registros A y CNAME).
-- **Clase 2:** Análisis de arquitectura TCP/IP, protocolos HTTP, certificados TLS/HTTPS y hoja de vida interactiva en HTML/CSS.
-- **Clase 3:** Guías de trabajo y análisis de casos prácticos (Ejercicios 1 al 10).
-
-### 🔹 Clase 4 — Maquetación CSS Avanzada
-- **`index.html`**: Maquetación exacta basada en el modelo de caja CSS (Box Model exacto, encabezado *a sangre*, paleta institucional y botón con pseudo-elementos).
-
-### 🔹 Semana 6 — Fundamentos de JavaScript y Responsive Web Design
-- **`FizzBuzzClasico.js`**: Implementación de algoritmos de control de flujo usando ciclos `for`, condicionales `if/else` y operadores aritméticos (`%`).
-- **`SumaArreglo.js`**: Manipulación de arreglos con `for...of` y acumulación de datos.
-- **`index.html`**: Portafolio profesional responsive con soporte para vistas Móvil, Tablet y Escritorio mediante *CSS Grid*, *Flexbox* y *Media Queries*.
+### 🔹 Semana 06 — Fundamentos de JavaScript y Responsive Web Design
+- **`FizzBuzzClasico.js`**: Algoritmos de control de flujo usando ciclos `for`, condicionales `if/else` y operador módulo (`%`).
+- **`TablaMultiplicar.js`**: Generación dinámica de tablas aritméticas con `prompt()` y *template literals*.
+- **`SumaArreglo.js`**: Manipulación de arreglos numéricos con `for...of` y acumuladores.
+- **`ClasificadorNotas.js`**: Evaluación condicional de calificaciones (A, B, C, D, F) y cálculo de promedio.
+- **`index.html`**: Portafolio profesional responsive usando *CSS Grid*, *Flexbox* y *Media Queries*.
 
 ### 🔹 Semana 11 — Gestión de Estado (State Management)
-- **`StateManagement.js`**: Implementación en JavaScript vanila de un contenedor de estado global (*Store*) siguiendo principios de **Redux/Flux**:
+- **`StateManagement.js`**: Contenedor de estado global (*Store*) siguiendo principios de **Redux/Flux**:
   - Funciones puras e inmutabilidad (`procesarInstruccion`).
   - Despacho de acciones (`INICIAR_SESION`, `AGREGAR_PRODUCTO`, `LIMPIAR_CARRITO`, `CERRAR_SESION`).
-  - Patrón de suscripción (*Listeners / Pub-Sub*) para reaccionar a los cambios de estado.
+  - Patrón de suscripción (*Listeners / Pub-Sub*) para reaccionar a cambios de estado.
 
 ---
 
-## Conceptos e Tecnologías Cubiertas
+## Conceptos y Tecnologías Cubiertas
 
-`HTML5 Semántico` `CSS3 Grid & Flexbox` `Responsive Design` `Box Model`  
+`HTML5 Semántico` `CSS3 Grid & Flexbox` `Selectores CSS` `Responsive Design` `Box Model`  
 `JavaScript (ES6+)` `State Management` `Redux Pattern` `Inmutabilidad` `Pub-Sub Pattern`  
 `DNS / TLDs` `HTTP / HTTPS / TLS` `Clean URLs` `TCP/IP`  
 
@@ -83,10 +84,10 @@
 
 - **Editor de Código:** Visual Studio Code  
 - **Control de Versiones:** Git / GitHub  
-- **Motor de Ejecución:** Node.js v24  
+- **Motor de Ejecución:** Node.js  
 
 ---
 
 ## Repositorio Oficial
 
-[https://github.com/VladimirRamirez07/Portafolio-ISW521]
+[https://github.com/VladimirRamirez07/Portafolio-ISW521](https://github.com/VladimirRamirez07/Portafolio-ISW521)
